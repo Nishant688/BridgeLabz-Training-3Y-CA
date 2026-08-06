@@ -1,0 +1,135 @@
+# FULL STACK DEVELOPMENT ASSIGNMENT
+
+## 1. Difference Between Frontend, Backend, and Full-Stack Development
+
+**Frontend:** The part of a website that users see and interact with. It mainly uses HTML, CSS, and JavaScript.
+**Example:** Amazon product page.
+
+**Backend:** The server-side part that handles business logic, authentication, APIs, and data processing. It uses technologies like Node.js, Python, Java, etc.
+
+**Full-Stack:** Full-stack development includes both frontend and backend development.
+
+---
+
+## 2. Client-Server Model
+
+```text
++---------+      Request       +---------+
+| Client  | -----------------> | Server  |
+| Browser | <----------------- |         |
++---------+      Response      +---------+
+```
+
+The client sends a request to the server, and the server processes it and sends back a response.
+
+---
+
+## 3. How a Browser Requests and Displays a Web Page
+
+1. User enters a URL in the browser.
+2. Browser sends an HTTP/HTTPS request to the server.
+3. Server processes the request.
+4. Server sends HTML, CSS, and JavaScript files.
+5. Browser renders these files and displays the webpage.
+
+---
+
+## 4. Tools Required for Web Development
+
+**VS Code:** Used to write and edit code.
+
+**Web Browser:** Used to run and test websites.
+
+**Node.js:** Used to run JavaScript outside the browser.
+
+**Git:** Used for version control.
+
+**GitHub:** Used to store and share projects online.
+
+---
+
+## 5. Web Server
+
+A web server is software that receives requests from browsers and sends web pages or other data as responses.
+
+**Examples:** Apache, Nginx, Microsoft IIS, and Node.js-based servers.
+
+---
+
+## 6. Roles in Web Development
+
+**Frontend Developer:** Creates the user interface and handles user interaction.
+
+**Backend Developer:** Develops server-side logic, APIs, authentication, and application functionality.
+
+**Database Administrator (DBA):** Manages, maintains, and secures the database.
+
+---
+
+## 7. VS Code Setup
+
+Install Visual Studio Code and configure it for HTML, CSS, and JavaScript development.
+
+Useful extensions:
+
+* Live Server
+* Prettier
+* HTML CSS Support
+* JavaScript support
+
+Create the following files:
+
+* index.html
+* style.css
+* script.js
+
+After completing the setup, take a screenshot of VS Code and attach it to the assignment.
+
+---
+
+## 8. Static vs Dynamic Websites
+
+**Static Website:** Displays mostly the same content to every user.
+**Example:** A simple portfolio website.
+
+**Dynamic Website:** Content can change according to the user, database, or other information.
+**Example:** Amazon or Instagram.
+
+---
+
+## 9. Five Web Browsers and Their Rendering Engines
+
+1. Google Chrome – Blink
+2. Microsoft Edge – Blink
+3. Mozilla Firefox – Gecko
+4. Safari – WebKit
+5. Opera – Blink
+
+A rendering engine converts HTML and CSS into the visual webpage displayed on the screen.
+
+---
+
+## 10. Basic Web Architecture Flow
+
+```text
++---------+
+| Client  |
+| Browser |
++----+----+
+     |
+     | Request
+     v
++----+----+        +---------+
+| Server  | <----> |   API   |
++----+----+        +---------+
+     |
+     | Query
+     v
++----+-----+
+| Database |
++----------+
+```
+
+**Flow:** Client → Server → API/Database → Server → Client.
+
+The client sends a request to the server. The server processes the request and communicates with APIs or the database when required. Finally, the server sends the response back to the client.
