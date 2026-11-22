@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison: Content-Box vs Border-Box</title>
+    <link rel="stylesheet" href="Box-Sizing-Comparison.css">
+</head>
+<body>
+    <header class="compare-header">
+        <h1>CSS Box-Sizing Comparative Analysis</h1>
+        <p>Both boxes below have identical width: 320px, padding: 30px, and border: 8px solid.</p>
+    </header>
+
+    <main class="compare-container">
+        <!-- Box 1: Default content-box -->
+        <article class="box-card box-content">
+            <span class="box-tag">Default Model</span>
+            <h2>box-sizing: content-box</h2>
+            <div class="metrics">
+                <p><strong>Declared Width:</strong> 320px</p>
+                <p><strong>Padding:</strong> 30px + 30px = 60px</p>
+                <p><strong>Border:</strong> 8px + 8px = 16px</p>
+                <p class="total-result"><strong>Total Rendered Width:</strong> 396px</p>
+            </div>
+            <p class="explanation">
+                In the standard content-box model, padding and border are added onto the declared width, 
+                causing the element to expand outward and potentially disrupt adjacent grid columns.
+            </p>
+        </article>
+
+        <!-- Box 2: border-box -->
+        <article class="box-card box-border">
+            <span class="box-tag">Modern Standard</span>
+            <h2>box-sizing: border-box</h2>
+            <div class="metrics">
+                <p><strong>Declared Width:</strong> 320px</p>
+                <p><strong>Padding:</strong> (Absorbed internally)</p>
+                <p><strong>Border:</strong> (Absorbed internally)</p>
+                <p class="total-result"><strong>Total Rendered Width:</strong> 320px</p>
+            </div>
+            <p class="explanation">
+                With border-box, padding and borders are contained within the declared width. 
+                The content area shrinks automatically, guaranteeing exact, predictable layout dimensions.
+            </p>
+        </article>
+    </main>
+
+    <footer class="compare-footer">
+        <p>&copy; 2026 CSS Architecture Standards Laboratory</p>
+    </footer>
+</body>
+</html>

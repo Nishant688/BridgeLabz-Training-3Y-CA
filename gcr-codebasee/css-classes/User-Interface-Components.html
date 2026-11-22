@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface Components</title>
+    <link rel="stylesheet" href="User-Interface-Components.css">
+</head>
+<body>
+    <main class="ui-stage">
+        <section class="ui-card-container">
+            <header class="ui-header">
+                <h2>Control Panel Components</h2>
+                <p>Consistent styling with padding, border-radius, shadows, and interactive state feedback</p>
+            </header>
+
+            <!-- Search Bar Component -->
+            <div class="component-block">
+                <label for="search-input">Search Documentation</label>
+                <div class="search-wrap">
+                    <input type="text" id="search-input" class="search-input" placeholder="Search keywords, APIs, guides...">
+                    <button type="button" class="search-btn">Search</button>
+                </div>
+            </div>
+
+            <!-- Action Buttons Component -->
+            <div class="component-block">
+                <label>System Actions</label>
+                <div class="action-buttons-row">
+                    <button type="button" class="btn btn-save">Save Changes</button>
+                    <button type="button" class="btn btn-cancel">Discard</button>
+                    <button type="button" class="btn btn-sync">Sync Cloud</button>
+                </div>
+            </div>
+
+            <!-- Pure CSS Dropdown Menu Component -->
+            <div class="component-block">
+                <label>Filter View Options</label>
+                <div class="dropdown-wrapper">
+                    <button type="button" class="dropdown-trigger">Select Category ▾</button>
+                    <div class="dropdown-menu">
+                        <a href="#all" class="dropdown-item">All Records</a>
+                        <a href="#active" class="dropdown-item">Active Deployments</a>
+                        <a href="#archived" class="dropdown-item">Archived Instances</a>
+                        <a href="#security" class="dropdown-item">Security Audits</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

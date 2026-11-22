@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Classes Showcase</title>
+    <link rel="stylesheet" href="Pseudo-Classes-Demonstration.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>CSS Pseudo-Classes Interactive Lab</h1>
+        <p>Demonstrating :hover, :focus, :active, and :nth-child() with live state feedback</p>
+    </header>
+
+    <main class="showcase-row">
+        <!-- Example 1: :hover on Links -->
+        <section class="demo-card">
+            <h2>1. :hover on Links</h2>
+            <p class="desc">Triggers when the pointer hovers over an interactive element.</p>
+            <div class="interactive-area">
+                <a href="#test" class="hover-link">Hover Over Me</a>
+            </div>
+            <span class="state-hint">Color shifts from blue to coral with underline expansion</span>
+        </section>
+
+        <!-- Example 2: :focus on Form Input & Button -->
+        <section class="demo-card">
+            <h2>2. :focus on Input</h2>
+            <p class="desc">Triggers when an element receives keyboard focus or mouse selection.</p>
+            <div class="interactive-area">
+                <input type="text" class="focus-input" placeholder="Click or Tab here...">
+            </div>
+            <span class="state-hint">Glowing outline and background brightness change</span>
+        </section>
+
+        <!-- Example 3: :active on Button -->
+        <section class="demo-card">
+            <h2>3. :active on Button</h2>
+            <p class="desc">Triggers during the exact moment an element is being clicked down.</p>
+            <div class="interactive-area">
+                <button type="button" class="active-btn">Press & Hold Me</button>
+            </div>
+            <span class="state-hint">Scales down and shifts background color to emerald</span>
+        </section>
+
+        <!-- Example 4: :nth-child() on List Items -->
+        <section class="demo-card">
+            <h2>4. :nth-child() on Lists</h2>
+            <p class="desc">Applies zebra-striping patterns according to item index formulae.</p>
+            <div class="interactive-area">
+                <ul class="zebra-list">
+                    <li>Item 1: Odd row</li>
+                    <li>Item 2: Even row</li>
+                    <li>Item 3: Odd row</li>
+                    <li>Item 4: Even row</li>
+                </ul>
+            </div>
+            <span class="state-hint">Alternates subtle slate and cyan tones</span>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 CSS Pseudo-Classes Exploration Lab</p>
+    </footer>
+</body>
+</html>
