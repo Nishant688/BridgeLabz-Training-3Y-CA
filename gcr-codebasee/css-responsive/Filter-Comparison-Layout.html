@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Filter Comparison</title>
+    <link rel="stylesheet" href="Filter-Comparison-Layout.css">
+</head>
+<body>
+    <header class="compare-header">
+        <h1>Before &amp; After Filter Comparison</h1>
+        <p>Compare the original image (left) with high-contrast filter enhancements (right). Hover over the right image to fade away the filter.</p>
+    </header>
+
+    <main class="compare-stage">
+        <!-- Left Image: Original -->
+        <figure class="image-panel left-panel">
+            <div class="frame">
+                <svg class="base-image" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="compGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0284c7"/>
+                            <stop offset="100%" stop-color="#6366f1"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="500" height="350" fill="url(#compGrad)"/>
+                    <circle cx="250" cy="140" r="70" fill="#facc15" opacity="0.9"/>
+                    <polygon points="50,350 250,180 450,350" fill="#0f172a"/>
+                    <text x="250" y="310" font-family="sans-serif" font-size="28" fill="#ffffff" font-weight="bold" text-anchor="middle">ORIGINAL CAPTURE</text>
+                </svg>
+            </div>
+            <figcaption>Before: Natural Raw Profile (Zero Filters)</figcaption>
+        </figure>
+
+        <!-- Right Image: Filter Applied (Fades on hover) -->
+        <figure class="image-panel right-panel">
+            <div class="frame">
+                <svg class="base-image filtered-image" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="compGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0284c7"/>
+                            <stop offset="100%" stop-color="#6366f1"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="500" height="350" fill="url(#compGrad2)"/>
+                    <circle cx="250" cy="140" r="70" fill="#facc15" opacity="0.9"/>
+                    <polygon points="50,350 250,180 450,350" fill="#0f172a"/>
+                    <text x="250" y="310" font-family="sans-serif" font-size="28" fill="#ffffff" font-weight="bold" text-anchor="middle">ORIGINAL CAPTURE</text>
+                </svg>
+            </div>
+            <figcaption>After: Contrast &amp; Brightness Boost (Hover to fade filter)</figcaption>
+        </figure>
+    </main>
+
+    <footer class="compare-footer">
+        <p>&copy; 2026 Image Processing & Comparative Design Matrix</p>
+    </footer>
+</body>
+</html>

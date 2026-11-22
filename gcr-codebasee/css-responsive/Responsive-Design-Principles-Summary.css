@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.principles-header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.principles-header h1 {
+    font-size: 2.6rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.principles-header p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+
+.principles-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.principle-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+    transition: background 0.4s ease, color 0.4s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.principle-card h2 {
+    font-size: 1.5rem;
+    color: #38bdf8;
+    margin-bottom: 14px;
+    transition: color 0.4s ease;
+}
+
+.definition {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color 0.4s ease;
+}
+
+.code-example pre {
+    background-color: #0b0f19;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 14px;
+    overflow-x: auto;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.code-example code {
+    font-family: 'Consolas', monospace;
+    font-size: 0.85rem;
+    color: #34d399;
+}
+
+.principle-card:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #1e1b4b 100%);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(2, 132, 199, 0.4);
+    border-color: #38bdf8;
+}
+
+.principle-card:hover h2 {
+    color: #ffffff;
+}
+
+.principle-card:hover .definition {
+    color: #f1f5f9;
+}
+
+.principle-card:hover .code-example pre {
+    background-color: rgba(11, 15, 25, 0.85);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.principles-footer {
+    text-align: center;
+    padding: 24px;
+    background-color: #0b1120;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 600px) {
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+}
