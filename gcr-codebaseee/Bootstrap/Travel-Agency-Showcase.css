@@ -1,0 +1,17 @@
+/* Custom refinements for Travel Agency Showcase */
+.destination-graphic {
+    max-height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    backdrop-filter: blur(4px);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.progress {
+    border-radius: 12px;
+    background-color: #e9ecef;
+}
