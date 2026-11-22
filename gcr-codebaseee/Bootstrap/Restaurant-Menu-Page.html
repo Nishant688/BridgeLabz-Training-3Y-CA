@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trattoria Bella - Today's Menu</title>
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Restaurant-Menu-Page.css">
+</head>
+<body class="bg-light">
+    <!-- Header with text-center and lead typography -->
+    <header class="py-5 bg-white border-bottom shadow-sm text-center">
+        <div class="container">
+            <span class="text-uppercase fw-semibold text-danger letter-spacing">Authentic Italian Trattoria</span>
+            <h1 class="display-4 fw-bold mt-2">Today's Seasonal Menu</h1>
+            <p class="lead text-secondary mx-auto col-md-8">
+                Handcrafted pasta, wood-fired hearth breads, and sustainably sourced Mediterranean delights.
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-5 align-items-start">
+            <!-- Left Column: Bootstrap Table for menu items, categories, and prices -->
+            <div class="col-12 col-lg-7">
+                <section class="card border-0 shadow-sm p-4">
+                    <h2 class="h4 fw-bold text-dark mb-4">À La Carte Selection</h2>
+                    <div class="table-responsive">
+                        <!-- Bootstrap Table with hover and striped rows -->
+                        <table class="table table-hover table-striped align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Dish Name</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col" class="text-end">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-semibold">Truffle Tagliolini</td>
+                                    <td><span class="badge bg-secondary">Primi</span></td>
+                                    <td class="text-end fw-bold text-success">$26.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Osso Buco alla Milanese</td>
+                                    <td><span class="badge bg-secondary">Secondi</span></td>
+                                    <td class="text-end fw-bold text-success">$38.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Burrata Pugliese</td>
+                                    <td><span class="badge bg-secondary">Antipasti</span></td>
+                                    <td class="text-end fw-bold text-success">$18.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Wild Mushroom Risotto</td>
+                                    <td><span class="badge bg-secondary">Primi</span></td>
+                                    <td class="text-end fw-bold text-success">$24.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Classic Tiramisù</td>
+                                    <td><span class="badge bg-secondary">Dolci</span></td>
+                                    <td class="text-end fw-bold text-success">$12.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Chef's Specials List Group + Image -->
+            <div class="col-12 col-lg-5">
+                <!-- List group for Chef's Specials -->
+                <section class="card border-0 shadow-sm p-4 mb-4">
+                    <h2 class="h5 fw-bold text-danger mb-3">⭐ Chef's Specials</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div>
+                                <h3 class="h6 fw-bold mb-0">Pan-Seared Sea Bass</h3>
+                                <small class="text-secondary">With roasted fennel and saffron broth</small>
+                            </div>
+                            <span class="badge bg-danger rounded-pill">$42.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div>
+                                <h3 class="h6 fw-bold mb-0">Handmade Lobster Ravioli</h3>
+                                <small class="text-secondary">Bisque reduction with fresh tarragon</small>
+                            </div>
+                            <span class="badge bg-danger rounded-pill">$36.00</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Food image (.img-fluid) with caption -->
+                <figure class="card border-0 shadow-sm overflow-hidden mb-0">
+                    <svg class="img-fluid" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
+                        <defs><linearGradient id="foodGrad" x1="0%" y1="0%" x2="1" y2="1"><stop offset="0%" stop-color="#b91c1c"/><stop offset="100%" stop-color="#7f1d1d"/></linearGradient></defs>
+                        <rect width="100%" height="100%" fill="url(#foodGrad)"/>
+                        <circle cx="50%" cy="45%" r="55" fill="#fef08a" opacity="0.3"/>
+                        <text x="50%" y="50%" font-family="serif" font-size="36" fill="#ffffff" text-anchor="middle">🍝</text>
+                    </svg>
+                    <figcaption class="p-3 bg-white text-secondary small text-center">
+                        Freshly rolled tagliolini prepared with seasonal Piedmont white truffles.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0 small text-secondary">&copy; 2026 Trattoria Bella Cucina • Reservations: (555) 019-2834</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
