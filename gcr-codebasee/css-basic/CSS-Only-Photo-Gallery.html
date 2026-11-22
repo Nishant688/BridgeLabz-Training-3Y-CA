@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Only Photo Gallery</title>
+    <link rel="stylesheet" href="CSS-Only-Photo-Gallery.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>Nature & Architecture Gallery</h1>
+        <p>Hover over any image to explore caption details and dynamic scaling effects</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Image 1 -->
+        <figure class="gallery-item">
+            <svg class="gallery-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f2027"/><stop offset="100%" stop-color="#2c5364"/></linearGradient></defs>
+                <rect width="400" height="300" fill="url(#g1)"/>
+                <circle cx="200" cy="120" r="50" fill="#38bdf8" opacity="0.8"/>
+                <polygon points="50,300 200,160 350,300" fill="#1e293b"/>
+                <text x="200" y="270" font-family="sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Mountain Horizon</text>
+            </svg>
+            <figcaption class="caption-overlay">
+                <h3>Alpine Summit</h3>
+                <p>Crisp morning mist settling across jagged peaks at sunrise.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Image 2 -->
+        <figure class="gallery-item">
+            <svg class="gallery-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff7e5f"/><stop offset="100%" stop-color="#feb47b"/></linearGradient></defs>
+                <rect width="400" height="300" fill="url(#g2)"/>
+                <circle cx="300" cy="90" r="40" fill="#fff" opacity="0.9"/>
+                <path d="M0,220 Q100,190 200,230 T400,210 L400,300 L0,300 Z" fill="#d97706"/>
+                <text x="200" y="270" font-family="sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Golden Sunset</text>
+            </svg>
+            <figcaption class="caption-overlay">
+                <h3>Desert Dunes</h3>
+                <p>Rolling ridges of golden sands illuminated by the descending sun.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Image 3 -->
+        <figure class="gallery-item">
+            <svg class="gallery-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#11998e"/><stop offset="100%" stop-color="#38ef7d"/></linearGradient></defs>
+                <rect width="400" height="300" fill="url(#g3)"/>
+                <circle cx="200" cy="140" r="45" fill="#a7f3d0"/>
+                <text x="200" y="270" font-family="sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Emerald Canopy</text>
+            </svg>
+            <figcaption class="caption-overlay">
+                <h3>Rainforest Sanctuary</h3>
+                <p>Deep biodiversity preserved within ancient tropical forest foliage.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Image 4 -->
+        <figure class="gallery-item">
+            <svg class="gallery-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#654ea3"/><stop offset="100%" stop-color="#eaafc8"/></linearGradient></defs>
+                <rect width="400" height="300" fill="url(#g4)"/>
+                <polygon points="120,60 280,60 320,240 80,240" fill="#312e81" opacity="0.6"/>
+                <text x="200" y="270" font-family="sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Modern Geometric</text>
+            </svg>
+            <figcaption class="caption-overlay">
+                <h3>Architectural Symmetry</h3>
+                <p>Monolithic concrete and glass façades redefining metropolitan skylines.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Image 5 -->
+        <figure class="gallery-item">
+            <svg class="gallery-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#141e30"/><stop offset="100%" stop-color="#243b55"/></linearGradient></defs>
+                <rect width="400" height="300" fill="url(#g5)"/>
+                <circle cx="100" cy="80" r="3" fill="#fff"/><circle cx="240" cy="50" r="2.5" fill="#fff"/>
+                <text x="200" y="280" font-family="sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Nocturnal Serenity</text>
+            </svg>
+            <figcaption class="caption-overlay">
+                <h3>Starlit Wilderness</h3>
+                <p>Pure celestial brilliance untouched by urban artificial illumination.</p>
+            </figcaption>
+        </figure>
+
+        <!-- Image 6 -->
+        <figure class="gallery-item">
+            <svg class="gallery-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3a6073"/><stop offset="100%" stop-color="#3a7bd5"/></linearGradient></defs>
+                <rect width="400" height="300" fill="url(#g6)"/>
+                <circle cx="200" cy="200" r="80" fill="#60a5fa" opacity="0.3"/>
+                <text x="200" y="270" font-family="sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Ocean Tides</text>
+            </svg>
+            <figcaption class="caption-overlay">
+                <h3>Deep Current</h3>
+                <p>Rhythmic maritime flows across coastal continental shelves.</p>
+            </figcaption>
+        </figure>
+    </main>
+
+    <footer class="gallery-footer">
+        <p>&copy; 2026 Pure CSS Photo Showcase</p>
+    </footer>
+</body>
+</html>

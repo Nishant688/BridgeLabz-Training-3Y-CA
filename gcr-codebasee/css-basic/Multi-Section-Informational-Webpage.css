@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    line-height: 1.8;
+    background-color: #0b0f19;
+}
+
+.destination-header {
+    background-color: #111827;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid #ef4444;
+}
+
+.destination-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ef4444;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.destination-header p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #e2e8f0;
+}
+
+.destination-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.destination-nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.destination-nav a:hover {
+    color: #ef4444;
+}
+
+.section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.card {
+    max-width: 800px;
+    background: rgba(15, 23, 42, 0.88);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #facc15;
+}
+
+.card p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #f1f5f9;
+}
+
+.section-linear {
+    background: linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #030712 100%);
+    border-bottom: 3px solid #6366f1;
+}
+
+.section-parallax-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid #ef4444;
+}
+
+.section-radial {
+    background: radial-gradient(circle at center, #0f766e 0%, #134e4a 50%, #022c22 100%);
+    border-bottom: 3px solid #14b8a6;
+}
+
+.section-parallax-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1600&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination-footer {
+    background-color: #030712;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    border-top: 1px solid #1f2937;
+}

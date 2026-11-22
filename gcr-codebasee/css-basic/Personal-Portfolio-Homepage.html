@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Nishant Prajapati</title>
+    <link rel="stylesheet" href="Personal-Portfolio-Homepage.css">
+</head>
+<body>
+    <!-- Header with position: fixed, name and nav links -->
+    <header class="portfolio-header">
+        <h1 class="brand-name">Nishant Prajapati</h1>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Section with bio paragraph and profile image -->
+    <main class="portfolio-main" id="home">
+        <section class="bio-section" id="about">
+            <div class="bio-content">
+                <h2>Full Stack Developer & Student</h2>
+                <p>
+                    Hello! I am Nishant Prajapati. I am passionate about modern web engineering, clean CSS styling, 
+                    and responsive user interface development. I enjoy designing performant, accessible digital products 
+                    and mastering frontend architectures.
+                </p>
+                <div class="stats-row">
+                    <span class="stat-badge">2026 Batch</span>
+                    <span class="stat-badge">Full Stack Ready</span>
+                    <span class="stat-badge">CSS Master</span>
+                </div>
+            </div>
+            <div class="bio-image-wrapper">
+                <svg class="profile-vector" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="q1grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0284c7"/>
+                            <stop offset="100%" stop-color="#1e293b"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="200" height="200" rx="100" fill="url(#q1grad)"/>
+                    <circle cx="100" cy="75" r="35" fill="#e2e8f0"/>
+                    <path d="M40 170 C40 125, 70 120, 100 120 C130 120, 160 125, 160 170 Z" fill="#e2e8f0"/>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer always staying at bottom of page -->
+    <footer class="portfolio-footer" id="contact">
+        <p>&copy; 2026 Nishant Prajapati. All rights reserved. | Built with HTML5 & CSS</p>
+    </footer>
+</body>
+</html>
