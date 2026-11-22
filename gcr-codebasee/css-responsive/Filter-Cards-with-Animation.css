@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0f19;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.profile-header h1 {
+    font-size: 2.6rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.profile-header p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+
+@keyframes pageLoadFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%;
+
+    animation: pageLoadFadeIn 0.8s ease-out forwards;
+}
+
+.profile-card {
+    flex: 1;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 35px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.avatar-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter 0.35s ease;
+}
+
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+
+.filter-sepia {
+    filter: sepia(90%);
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+    border-color: #38bdf8;
+}
+
+.profile-card:hover .profile-img {
+    filter: none;
+}
+
+.profile-card h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.profile-card h3 {
+    font-size: 0.95rem;
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.profile-card p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.profile-footer {
+    text-align: center;
+    padding: 24px;
+    background-color: #070a12;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 800px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-card {
+        width: 100%;
+        max-width: 480px;
+    }
+}
