@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Nishant Prajapati",
+      "email": "nishant@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Aarav Sharma",
+      "email": "aarav@tech.com"
+    },
+    {
+      "id": 3,
+      "name": "Meera Patel",
+      "email": "meera@startup.io"
+    },
+    {
+      "id": 4,
+      "name": "Chetan Verma",
+      "email": "chetan@corp.org"
+    },
+    {
+      "id": 5,
+      "name": "Sneha Reddy",
+      "email": "sneha@dev.net"
+    }
+  ]
+}

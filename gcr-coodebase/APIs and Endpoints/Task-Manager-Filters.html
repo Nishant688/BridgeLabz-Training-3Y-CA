@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager with Filters - jQuery AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 40px; }
+        .card { max-width: 650px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .filter-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        select { padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1; font-size: 0.95rem; }
+        .task-row { display: flex; justify-content: space-between; align-items: center; padding: 12px; border-bottom: 1px solid #e2e8f0; }
+        .task-done .task-title { text-decoration: line-through; color: #94a3b8; }
+        .priority-pill { padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; }
+        .priority-high { background: #fee2e2; color: #dc2626; }
+        .priority-med { background: #fef3c7; color: #d97706; }
+        .priority-low { background: #e0f2fe; color: #0284c7; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Task Manager Orchestrator</h2>
+        <div class="filter-row">
+            <span>Filter Tasks by:</span>
+            <select id="filterDropdown">
+                <option value="All">All Tasks</option>
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+                <option value="Completed">Completed Only</option>
+            </select>
+        </div>
+        <div id="taskListContainer"></div>
+    </div>
+    <script src="Task-Manager-Filters.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Live Search - jQuery AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 40px; }
+        .search-card { max-width: 600px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .search-box { width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        .loader { display: none; margin: 12px 0; color: #0284c7; font-weight: bold; }
+        .results-list { margin-top: 15px; }
+        .product-item { display: flex; align-items: center; gap: 15px; padding: 10px; border-bottom: 1px solid #e2e8f0; }
+        .product-thumb { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; background: #e2e8f0; }
+        .product-info h4 { margin: 0 0 5px 0; font-size: 1rem; }
+        .product-price { margin: 0; color: #16a34a; font-weight: bold; }
+        .no-results { padding: 20px; text-align: center; color: #dc2626; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="search-card">
+        <h2>Live Product Catalog Search</h2>
+        <input type="text" id="productSearchInput" class="search-box" placeholder="Type product name (e.g., keyboard, mouse)...">
+        <div id="loadingIndicator" class="loader">⏳ Searching products database...</div>
+        <div id="resultsContainer" class="results-list"></div>
+    </div>
+    <script src="Real-Time-Live-Search.js"></script>
+</body>
+</html>

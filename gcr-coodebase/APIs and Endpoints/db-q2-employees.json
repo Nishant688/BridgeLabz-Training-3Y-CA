@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Nishant Prajapati",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Aarav Sharma",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Meera Patel",
+      "status": "inactive"
+    },
+    {
+      "id": 4,
+      "name": "Vikram Sen",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "Sneha Kapoor",
+      "status": "inactive"
+    }
+  ]
+}

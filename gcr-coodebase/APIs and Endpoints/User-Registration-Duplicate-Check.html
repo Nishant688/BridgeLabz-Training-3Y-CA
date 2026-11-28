@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Duplicate Check - GET & POST</title>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 40px; }
+        .card { max-width: 420px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; }
+        button { width: 100%; padding: 12px; background: #2563eb; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: bold; }
+        .alert-info { background: #e0f2fe; color: #0369a1; padding: 10px; border-radius: 4px; margin-top: 15px; }
+        .alert-error { background: #fee2e2; color: #dc2626; padding: 10px; border-radius: 4px; margin-top: 15px; font-weight: bold; }
+        .alert-success { background: #dcfce7; color: #16a34a; padding: 10px; border-radius: 4px; margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>User Registration with Pre-Check</h2>
+        <form id="regForm">
+            <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" id="regName" required placeholder="Nishant Prajapati">
+            </div>
+            <div class="form-group">
+                <label>Email Address:</label>
+                <input type="email" id="regEmail" required placeholder="user@company.com">
+            </div>
+            <button type="submit">Submit Registration</button>
+            <div id="regMessage" style="display: none;"></div>
+        </form>
+    </div>
+    <script src="User-Registration-Duplicate-Check.js"></script>
+</body>
+</html>

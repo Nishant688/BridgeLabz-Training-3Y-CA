@@ -1,0 +1,46 @@
+{
+  "timetable": [
+    {
+      "id": 1,
+      "day": "Monday",
+      "subject": "Cloud Distributed Systems",
+      "faculty": "Dr. A. Turing",
+      "time": "09:00 - 10:30 AM"
+    },
+    {
+      "id": 2,
+      "day": "Monday",
+      "subject": "Compiler Optimization",
+      "faculty": "Prof. E. Dijkstra",
+      "time": "11:00 - 12:30 PM"
+    },
+    {
+      "id": 3,
+      "day": "Tuesday",
+      "subject": "Database Internals & Storage",
+      "faculty": "Dr. C. Date",
+      "time": "10:00 - 11:30 AM"
+    },
+    {
+      "id": 4,
+      "day": "Wednesday",
+      "subject": "Artificial Intelligence & Logic",
+      "faculty": "Prof. M. Minsky",
+      "time": "09:30 - 11:00 AM"
+    },
+    {
+      "id": 5,
+      "day": "Thursday",
+      "subject": "Computer Networks & Security",
+      "faculty": "Dr. V. Cerf",
+      "time": "02:00 - 03:30 PM"
+    },
+    {
+      "id": 6,
+      "day": "Friday",
+      "subject": "Quantum Computing Foundations",
+      "faculty": "Dr. R. Feynman",
+      "time": "11:00 - 12:30 PM"
+    }
+  ]
+}

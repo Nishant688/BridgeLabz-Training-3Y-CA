@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Resolve Critical Database Ingress Timeout",
+      "priority": "High",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Update Swagger OpenAPI Documentation",
+      "priority": "Low",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Implement Redis Cache for User Sessions",
+      "priority": "Medium",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Conduct Security Audit on Payment Gateway",
+      "priority": "High",
+      "completed": true
+    },
+    {
+      "id": 5,
+      "title": "Refactor CSS Grid Layout for Tablet Views",
+      "priority": "Low",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "Upgrade Kubernetes Pod Autoscaler to v2",
+      "priority": "Medium",
+      "completed": false
+    }
+  ]
+}

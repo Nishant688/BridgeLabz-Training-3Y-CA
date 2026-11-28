@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice"
+    },
+    {
+      "id": 2,
+      "name": "Bob"
+    },
+    {
+      "id": 3,
+      "name": "Charlie"
+    },
+    {
+      "id": 4,
+      "name": "Diana"
+    },
+    {
+      "id": 5,
+      "name": "Evan"
+    }
+  ],
+  "orders": [
+    {
+      "id": 101,
+      "total": 250
+    },
+    {
+      "id": 102,
+      "total": 420
+    },
+    {
+      "id": 103,
+      "total": 110
+    },
+    {
+      "id": 104,
+      "total": 950
+    },
+    {
+      "id": 105,
+      "total": 60
+    }
+  ],
+  "products": [
+    {
+      "id": 201,
+      "title": "Monitor"
+    },
+    {
+      "id": 202,
+      "title": "Keyboard"
+    },
+    {
+      "id": 203,
+      "title": "Mouse"
+    },
+    {
+      "id": 204,
+      "title": "Webcam"
+    },
+    {
+      "id": 205,
+      "title": "Mic"
+    }
+  ]
+}
