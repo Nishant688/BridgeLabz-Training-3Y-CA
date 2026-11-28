@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Form Builder</title>
+</head>
+<body style="font-family: sans-serif; padding: 25px;">
+    <h2>Dynamic Form Builder Container</h2>
+    <div id="formContainer" style="max-width: 400px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;"></div>
+    <div id="outputDisplay" style="margin-top: 20px; font-family: monospace;"></div>
+    <script src="Custom-Form-Builder.js"></script>
+    <script>
+        document.getElementById('formContainer').innerHTML = builder.renderHTML();
+        document.getElementById('dynamicGeneratedForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = builder.getFormData(e.target);
+            document.getElementById('outputDisplay').innerText = "Form Data: " + JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
