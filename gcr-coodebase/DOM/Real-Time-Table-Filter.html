@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Table Filter</title>
+    <link rel="stylesheet" href="Real-Time-Table-Filter.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Directory Table</h2>
+        <input type="text" id="searchInput" placeholder="Search by name, branch, or CGPA...">
+        <table class="styled-table">
+            <thead>
+                <tr><th>Student Name</th><th>Branch</th><th>CGPA</th></tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <tr><td>Aarav Sharma</td><td>Computer Science</td><td>8.9</td></tr>
+                <tr><td>Bhavna Patel</td><td>Electronics & Comm</td><td>9.2</td></tr>
+                <tr><td>Chirag Verma</td><td>Information Technology</td><td>7.8</td></tr>
+                <tr><td>Deepak Reddy</td><td>Mechanical Engineering</td><td>8.1</td></tr>
+                <tr><td>Esha Gupta</td><td>Computer Science</td><td>9.5</td></tr>
+                <tr id="noResultsRow" style="display: none;"><td colspan="3" class="no-results">No results found</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="Real-Time-Table-Filter.js"></script>
+</body>
+</html>

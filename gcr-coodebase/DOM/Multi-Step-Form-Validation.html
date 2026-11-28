@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Step Form with Validation</title>
+    <link rel="stylesheet" href="Multi-Step-Form-Validation.css">
+</head>
+<body>
+    <div class="step-card">
+        <!-- Step 1 -->
+        <div id="step1" class="step-container">
+            <h3>Step 1: Personal Name</h3>
+            <input type="text" id="nameInput" placeholder="Enter Full Name">
+            <div class="btn-row"><button id="next1" class="btn-primary">Next &rarr;</button></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="step2" class="step-container">
+            <h3>Step 2: Email Address</h3>
+            <input type="email" id="emailInput" placeholder="name@domain.com">
+            <div class="btn-row">
+                <button id="back2" class="btn-secondary">&larr; Back</button>
+                <button id="next2" class="btn-primary">Next &rarr;</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="step3" class="step-container">
+            <h3>Step 3: Security Password</h3>
+            <input type="password" id="passwordInput" placeholder="Minimum 6 characters">
+            <div class="btn-row">
+                <button id="back3" class="btn-secondary">&larr; Back</button>
+                <button id="submitBtn" class="btn-success">Complete Registration</button>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div id="summary" class="step-container" style="display: none;">
+            <h3>Registration Summary</h3>
+            <p><strong>Name:</strong> <span id="summaryName"></span></p>
+            <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+            <p><strong>Password:</strong> <span id="summaryPassword"></span></p>
+            <div class="alert-box">Registration successfully verified and complete!</div>
+        </div>
+    </div>
+    <script src="Multi-Step-Form-Validation.js"></script>
+</body>
+</html>

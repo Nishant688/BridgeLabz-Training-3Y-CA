@@ -1,0 +1,8 @@
+body { font-family: sans-serif; background: #f8fafc; padding: 40px; }
+.counter-card { max-width: 480px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+textarea { width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; resize: none; }
+.counter-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+.counter-text { font-weight: 600; color: #475569; }
+.warning-yellow { color: #d97706 !important; }
+.danger-red { color: #dc2626 !important; }
+button { padding: 6px 14px; background: #64748b; color: white; border: none; border-radius: 4px; cursor: pointer; }
