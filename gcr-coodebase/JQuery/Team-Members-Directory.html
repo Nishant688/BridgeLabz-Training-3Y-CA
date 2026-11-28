@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Members Directory - jQuery Traversal</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 30px; }
+        .directory { max-width: 700px; margin: 0 auto; }
+        .department-block { background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .dept-header { cursor: pointer; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+        .manager-card { background: #dbeafe; padding: 10px; border-radius: 6px; margin: 10px 0; cursor: pointer; font-weight: bold; }
+        .team-roster { list-style: none; padding: 0; margin: 10px 0; }
+        .employee-item { padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px; margin-bottom: 6px; cursor: pointer; }
+        .contact-info { display: none; font-size: 0.85rem; color: #64748b; margin-top: 4px; }
+        .highlight-reports { border-color: #3b82f6 !important; background: #eff6ff !important; }
+        .dept-bg-active { background: #fefce8 !important; padding: 10px; border-radius: 6px; }
+        .sibling-highlight { background: #fdf2f8 !important; border-color: #f472b6 !important; }
+        .self-selected { background: #f0fdf4 !important; border-color: #22c55e !important; font-weight: bold; }
+        .toggle-team-btn { padding: 5px 12px; background: #64748b; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="directory">
+        <h2>Organizational Team Directory</h2>
+        
+        <div class="department-block">
+            <h3 class="dept-header">Engineering Department (Click title to toggle team bg)</h3>
+            <button class="toggle-team-btn">Collapse/Expand Team</button>
+            <div class="manager-card">👤 Dr. Sarah Connor - Engineering Director (Click to highlight reports)</div>
+            <ul class="team-roster">
+                <li class="employee-item report-card">
+                    <span class="employee-name">Nishant Prajapati (Frontend Lead)</span>
+                    <div class="contact-info">📧 nishant@company.com | 📱 +91 9876543210</div>
+                </li>
+                <li class="employee-item report-card">
+                    <span class="employee-name">Aarav Sharma (Backend Systems)</span>
+                    <div class="contact-info">📧 aarav@company.com | 📱 +91 9876543211</div>
+                </li>
+                <li class="employee-item report-card">
+                    <span class="employee-name">Meera Patel (DevOps & SRE)</span>
+                    <div class="contact-info">📧 meera@company.com | 📱 +91 9876543212</div>
+                </li>
+                <li class="employee-item report-card">
+                    <span class="employee-name">Chetan Rao (QA Automation)</span>
+                    <div class="contact-info">📧 chetan@company.com | 📱 +91 9876543213</div>
+                </li>
+                <li class="employee-item report-card">
+                    <span class="employee-name">Esha Sen (Mobile iOS/Android)</span>
+                    <div class="contact-info">📧 esha@company.com | 📱 +91 9876543214</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="Team-Members-Directory.js"></script>
+</body>
+</html>

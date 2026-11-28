@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-jQuery Widgets - noConflict</title>
+    <!-- jQuery Version 1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 40px; text-align: center; }
+        .widget-box { max-width: 500px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .carousel-widget-item { padding: 15px; border: 1px solid #cbd5e1; margin: 8px 0; border-radius: 6px; cursor: pointer; }
+        .active-widget { background: #3b82f6; color: white; font-weight: bold; }
+        #tooltipDisplay { margin-top: 15px; color: #6366f1; font-weight: bold; min-height: 24px; }
+        button { padding: 10px 18px; background: #1e293b; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="widget-box">
+        <h2>Multi-jQuery Widget Coexistence</h2>
+        <p style="font-size:0.85rem; color:#64748b;">Powered by jQuery.noConflict()</p>
+        <div class="carousel-widget-item active-widget">Widget 1: Live Analytics Feed</div>
+        <div class="carousel-widget-item">Widget 2: Server Resource Monitor</div>
+        <div class="carousel-widget-item">Widget 3: Security Incident Stream</div>
+        <div class="carousel-widget-item">Widget 4: Network Latency Radar</div>
+        <div class="carousel-widget-item">Widget 5: Database Replication Pulse</div>
+        <div style="margin-top: 15px;">
+            <button id="nextSlideBtn">Next Widget &rarr;</button>
+        </div>
+        <div id="tooltipDisplay"></div>
+    </div>
+    <script src="Multi-JQuery-Widgets.js"></script>
+</body>
+</html>

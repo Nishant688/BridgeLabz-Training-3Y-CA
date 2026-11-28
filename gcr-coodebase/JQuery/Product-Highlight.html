@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Highlight - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f1f5f9; padding: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
+        .product-card { background: white; padding: 20px; border-radius: 8px; border: 1px solid #cbd5e1; cursor: pointer; transition: all 0.2s; position: relative; }
+        .active-highlight { box-shadow: 0 0 0 3px #3b82f6 !important; background: #eff6ff !important; }
+        .extra-details { display: none; margin-top: 10px; font-size: 0.85rem; color: #64748b; }
+        .fav-btn { margin-top: 10px; padding: 4px 10px; border: 1px solid #cbd5e1; background: white; border-radius: 4px; cursor: pointer; font-size: 0.85rem; }
+        .fav-btn.favorited { background: #fef08a; border-color: #ca8a04; color: #854d0e; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">E-Commerce Product Showcase (At least 5 Items)</h2>
+    <div class="grid">
+        <div class="product-card" data-discount="true" data-stock="12">
+            <h3>Mechanical Keyboard</h3>
+            <p>Price: $89.99</p>
+            <button class="fav-btn">&#9734; Favorite</button>
+            <div class="extra-details">RGB Backlit with Hot-swappable tactile switches.</div>
+        </div>
+        <div class="product-card" data-discount="false" data-stock="0">
+            <h3>Wireless Mouse</h3>
+            <p>Price: $45.00</p>
+            <button class="fav-btn">&#9734; Favorite</button>
+            <div class="extra-details">Ergonomic rechargeable optical mouse. (0 in stock)</div>
+        </div>
+        <div class="product-card" data-discount="true" data-stock="5">
+            <h3>Noise-Cancelling Headphones</h3>
+            <p>Price: $199.99</p>
+            <button class="fav-btn">&#9734; Favorite</button>
+            <div class="extra-details">Active ANC with 35hr long-lasting battery life.</div>
+        </div>
+        <div class="product-card" data-discount="false" data-stock="20">
+            <h3>UltraWide Monitor 34"</h3>
+            <p>Price: $349.99</p>
+            <button class="fav-btn">&#9734; Favorite</button>
+            <div class="extra-details">144Hz IPS Panel with HDR400 color precision.</div>
+        </div>
+        <div class="product-card" data-discount="true" data-stock="8">
+            <h3>Multiport USB-C Hub</h3>
+            <p>Price: $39.99</p>
+            <button class="fav-btn">&#9734; Favorite</button>
+            <div class="extra-details">7-in-1 adapter with 4K HDMI and 100W PD charging.</div>
+        </div>
+    </div>
+    <script src="Product-Highlight.js"></script>
+</body>
+</html>

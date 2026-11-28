@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Offer Banners - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #0f172a; color: white; padding: 40px; text-align: center; }
+        .banner-container { max-width: 600px; margin: 20px auto; min-height: 120px; }
+        .promo-banner { padding: 25px; border-radius: 8px; font-weight: bold; font-size: 1.15rem; margin-bottom: 10px; }
+        .b1 { background: #dc2626; }
+        .b2 { background: #2563eb; }
+        .b3 { background: #16a34a; }
+        .b4 { background: #d97706; }
+        .b5 { background: #7c3aed; }
+        .btn-controls button { padding: 10px 16px; margin: 4px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Promotional Offer Banners (Auto-Rotating & Interactive)</h2>
+    <div class="banner-container">
+        <div class="promo-banner b1">🔥 Flash Sale: 50% Off Cloud Hosting (Code: CLOUD50)</div>
+        <div class="promo-banner b2">🚀 Free Domain & SSL Certificate with Annual VPS Plans</div>
+        <div class="promo-banner b3">🎉 Student Discount: 70% Off All Developer Tools</div>
+        <div class="promo-banner b4">⚡ Black Friday Early Access: Extra 20% Off Database Clusters</div>
+        <div class="promo-banner b5">💎 Enterprise Migration Package: Zero Downtime Guarantee</div>
+    </div>
+    <div class="btn-controls">
+        <button id="hideBannersBtn" style="background:#ef4444; color:white;">Hide All</button>
+        <button id="showBannersBtn" style="background:#22c55e; color:white;">Show All</button>
+        <button id="slideToggleBtn" style="background:#3b82f6; color:white;">Slide Toggle</button>
+        <button id="fadeToggleBtn" style="background:#a855f7; color:white;">Fade Toggle</button>
+    </div>
+    <script src="Special-Offer-Banner.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive FAQ - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 40px; }
+        .faq-wrapper { max-width: 600px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .faq-item { border-bottom: 1px solid #e2e8f0; padding: 12px 0; }
+        .faq-question { font-weight: bold; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s; }
+        .faq-answer { display: none; padding: 10px; color: #475569; font-size: 0.95rem; }
+        .faq-input { width: 90%; padding: 6px; margin-top: 8px; border: 1px solid #cbd5e1; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="faq-wrapper">
+        <h2>Frequently Asked Questions (5 Items)</h2>
+        <p style="font-size:0.85rem; color:#64748b;">Click to toggle, double-click to collapse all, focus feedback input.</p>
+        
+        <div class="faq-item">
+            <div class="faq-question">1. What is jQuery?</div>
+            <div class="faq-answer">
+                jQuery is a fast, small, and feature-rich JavaScript library designed to simplify HTML DOM traversal and manipulation.
+                <input type="text" class="faq-input" placeholder="Feedback on this question...">
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">2. How does event delegation work in jQuery?</div>
+            <div class="faq-answer">
+                Event delegation leverages event bubbling by attaching a single handler to a common parent using .on('event', 'selector', fn).
+                <input type="text" class="faq-input" placeholder="Feedback on this question...">
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">3. What is the difference between .empty() and .remove()?</div>
+            <div class="faq-answer">
+                .empty() removes all child nodes inside an element, while .remove() deletes the target element and its children from the DOM.
+                <input type="text" class="faq-input" placeholder="Feedback on this question...">
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">4. How do you handle animations smoothly?</div>
+            <div class="faq-answer">
+                jQuery provides .animate(), .slideToggle(), and .fadeToggle() which integrate with CSS properties and easing functions.
+                <input type="text" class="faq-input" placeholder="Feedback on this question...">
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">5. Can multiple jQuery versions coexist on one page?</div>
+            <div class="faq-answer">
+                Yes! jQuery.noConflict(true) restores global variables and returns a unique handle for each loaded library instance.
+                <input type="text" class="faq-input" placeholder="Feedback on this question...">
+            </div>
+        </div>
+    </div>
+    <script src="Interactive-FAQ.js"></script>
+</body>
+</html>

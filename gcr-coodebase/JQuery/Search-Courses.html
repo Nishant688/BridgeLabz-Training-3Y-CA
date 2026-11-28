@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Courses - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f8fafc; padding: 40px; }
+        .search-card { max-width: 600px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .search-bar { display: flex; gap: 8px; margin-bottom: 15px; }
+        .search-bar input { flex: 1; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 1rem; }
+        .search-bar button { padding: 10px 16px; background: #64748b; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .course-list { list-style: none; padding: 0; }
+        .course-item { padding: 12px; border: 1px solid #e2e8f0; margin-bottom: 8px; border-radius: 4px; transition: background 0.2s; }
+        .badge { font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 2px 6px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="search-card">
+        <h2>Online Course Catalog (5+ Courses)</h2>
+        <div class="search-bar">
+            <input type="text" id="courseSearch" placeholder="Filter courses in real-time...">
+            <button id="clearSearchBtn">Clear</button>
+        </div>
+        <p>Matching Courses Found: <strong id="matchCount">5</strong></p>
+        <ul class="course-list">
+            <li class="course-item"><span class="course-title">FullStack Web Development with React & Node</span> <span class="badge">12 Weeks</span></li>
+            <li class="course-item"><span class="course-title">Advanced JavaScript, ES6 & Design Patterns</span> <span class="badge">6 Weeks</span></li>
+            <li class="course-item"><span class="course-title">Data Structures & Algorithms in Java</span> <span class="badge">10 Weeks</span></li>
+            <li class="course-item"><span class="course-title">Cloud Infrastructure on AWS & Kubernetes</span> <span class="badge">8 Weeks</span></li>
+            <li class="course-item"><span class="course-title">Python for Data Science & Machine Learning</span> <span class="badge">10 Weeks</span></li>
+        </ul>
+    </div>
+    <script src="Search-Courses.js"></script>
+</body>
+</html>

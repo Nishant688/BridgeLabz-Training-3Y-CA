@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Subscription Panel - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f1f5f9; padding: 40px; }
+        .card { max-width: 500px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .topic-list { list-style: none; padding: 0; }
+        .topic-item { padding: 10px; border: 1px solid #cbd5e1; margin-bottom: 6px; border-radius: 4px; cursor: pointer; transition: background 0.2s; }
+        .topic-item:hover { background: #e0f2fe; }
+        .btn-row button { padding: 8px 14px; margin-right: 6px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .feedback { margin-top: 15px; padding: 10px; background: #dcfce7; color: #15803d; border-radius: 4px; display: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Subscription Notification Center</h2>
+        <p>Status: <strong id="statusText" style="color: #16a34a;">Active</strong></p>
+        <div class="btn-row" style="margin-bottom: 15px;">
+            <button id="subscribeBtn" style="background:#16a34a; color:white;">Subscribe All</button>
+            <button id="unsubscribeBtn" style="background:#ef4444; color:white;">Unsubscribe All</button>
+        </div>
+        <div style="display: flex; gap: 8px; margin-bottom: 15px;">
+            <input type="text" id="newTopicInput" placeholder="New Topic Name..." style="flex: 1; padding: 8px;">
+            <button id="addTopicBtn" style="background:#2563eb; color:white; border:none; padding:8px 12px; border-radius:4px;">Add</button>
+        </div>
+        <ul id="topicList" class="topic-list">
+            <li class="topic-item">Artificial Intelligence & ML</li>
+            <li class="topic-item">Cloud DevOps & Kubernetes</li>
+            <li class="topic-item">Frontend Architecture (React/Vue/Angular)</li>
+            <li class="topic-item">Cybersecurity & Zero Trust</li>
+            <li class="topic-item">Blockchain & Decentralized Tech</li>
+        </ul>
+        <div id="feedbackMsg" class="feedback"></div>
+    </div>
+    <script src="Event-Subscription-Panel.js"></script>
+</body>
+</html>
