@@ -1,9 +1,0 @@
-/* Custom transitions and hover enhancements for Pricing Cards */
-.pricing-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.pricing-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.15) !important;
-}
